@@ -1,0 +1,2 @@
+# Watch the global variable myString. It should have the value 'Hello AX World'
+myString
