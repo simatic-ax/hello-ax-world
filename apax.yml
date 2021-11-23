@@ -3,6 +3,28 @@ version: 0.0.0
 type: app
 targets:
   - "1500"
+  - "plcsim"
   - axunit-llvm
 devDependencies:
   "@ax/sdk": 0.2.449
+variables:
+  APAX_BUILD_ARGS:
+    - --debug 
+  BIN_FOLDER: "./bin/plcsim"
+  BIN_FOLDER_PLC: "./bin/1500"
+  TARGET: plcsim #plcsim OR 1500
+  # set the ip adress for your target
+  IP_ADDRESS: 192.168.0.1
+scripts:
+  load:
+    - if [ "$TARGET" == "S71500" ]; then
+    - echo download to S71500 PLC
+    - apax dlplc
+    - else
+    - echo download to PLCSIM Advanced
+    - apax dlsim
+    - fi
+  dlsim:
+    - apax sld -i $BIN_FOLDER -t $IP_ADDRESS -r --accept-security-disclaimer
+  dlplc:
+    - apax sld -i $BIN_FOLDER_PLC -t $IP_ADDRESS -r --accept-security-disclaimer
