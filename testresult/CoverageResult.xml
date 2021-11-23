@@ -1,0 +1,26 @@
+<CoverageResult>
+  <FunctionResult function="Siemens.Ax.MyTestFixture.MyTestMethod" StartLine="8" SourceName="d:\Git\AxCommunity\hello-ax-world\test\test.st">
+    <CoveredBlocks>
+      <Block covered="True">
+        <Location SourceName="d:\Git\AxCommunity\hello-ax-world\test\test.st" StartLine="12" EndLine="12" />
+        <Location SourceName="d:\Git\AxCommunity\hello-ax-world\test\test.st" StartLine="13" EndLine="13" />
+      </Block>
+    </CoveredBlocks>
+  </FunctionResult>
+  <FunctionResult function="Siemens.Ax.HelloWorldFunction" StartLine="2" SourceName="d:\Git\AxCommunity\hello-ax-world\src\HelloWorldFunction.st">
+    <CoveredBlocks>
+      <Block covered="True">
+        <Location SourceName="d:\Git\AxCommunity\hello-ax-world\src\HelloWorldFunction.st" StartLine="3" EndLine="3" />
+        <Location SourceName="d:\Git\AxCommunity\hello-ax-world\src\HelloWorldFunction.st" StartLine="4" EndLine="4" />
+      </Block>
+    </CoveredBlocks>
+  </FunctionResult>
+  <FunctionResult function="MyProgram" StartLine="1" SourceName="d:\Git\AxCommunity\hello-ax-world\src\program.st">
+    <CoveredBlocks>
+      <Block covered="False">
+        <Location SourceName="d:\Git\AxCommunity\hello-ax-world\src\program.st" StartLine="14" EndLine="14" />
+        <Location SourceName="d:\Git\AxCommunity\hello-ax-world\src\program.st" StartLine="16" EndLine="16" />
+      </Block>
+    </CoveredBlocks>
+  </FunctionResult>
+</CoverageResult>

@@ -1,0 +1,20 @@
+<CoverageMeta>
+  <Function Name="Siemens.Ax.MyTestFixture.MyTestMethod" StartLine="8" SourceName="d:\Git\AxCommunity\hello-ax-world\test\test.st">
+    <TracePoint Name="axunit_Tracepoint_2">
+      <Location SourceName="d:\Git\AxCommunity\hello-ax-world\test\test.st" StartLine="12" EndLine="12" StartColumn="13" EndColumn="13" />
+      <Location SourceName="d:\Git\AxCommunity\hello-ax-world\test\test.st" StartLine="13" EndLine="13" StartColumn="19" EndColumn="19" />
+    </TracePoint>
+  </Function>
+  <Function Name="Siemens.Ax.HelloWorldFunction" StartLine="2" SourceName="d:\Git\AxCommunity\hello-ax-world\src\HelloWorldFunction.st">
+    <TracePoint Name="axunit_Tracepoint_0">
+      <Location SourceName="d:\Git\AxCommunity\hello-ax-world\src\HelloWorldFunction.st" StartLine="3" EndLine="3" StartColumn="9" EndColumn="9" />
+      <Location SourceName="d:\Git\AxCommunity\hello-ax-world\src\HelloWorldFunction.st" StartLine="4" EndLine="4" StartColumn="17" EndColumn="17" />
+    </TracePoint>
+  </Function>
+  <Function Name="MyProgram" StartLine="1" SourceName="d:\Git\AxCommunity\hello-ax-world\src\program.st">
+    <TracePoint Name="axunit_Tracepoint_1">
+      <Location SourceName="d:\Git\AxCommunity\hello-ax-world\src\program.st" StartLine="14" EndLine="14" StartColumn="5" EndColumn="5" />
+      <Location SourceName="d:\Git\AxCommunity\hello-ax-world\src\program.st" StartLine="16" EndLine="16" StartColumn="12" EndColumn="12" />
+    </TracePoint>
+  </Function>
+</CoverageMeta>
