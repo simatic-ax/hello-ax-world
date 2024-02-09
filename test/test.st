@@ -6,7 +6,7 @@ NAMESPACE Siemens.Ax
     CLASS MyTestFixture
         {Test}
         METHOD PUBLIC MyTestMethod
-            VAR_EXTERNAL
+            VAR_TEMP
                 myString : String;
             END_VAR
             Assert.Equal(actual := HelloWorldFunction(), expected := 'Hello AX World');
