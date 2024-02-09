@@ -2,34 +2,28 @@ name: hello-ax-world
 version: 0.0.0
 type: app
 targets:
-  - "1500"
   - "plcsim"
-  - axunit-llvm
+  - llvm
 devDependencies:
   "@ax/sdk": 2311.0.1
 variables:
   APAX_BUILD_ARGS:
     - --debug
   BIN_FOLDER: "./bin/plcsim"
-  BIN_FOLDER_PLC: "./bin/1500"
-  TARGET: plcsim #plcsim OR 1500
   # set the ip adress for your target
   IP_ADDRESS: 192.168.0.1
 scripts:
-  load:
-    - if [ "$TARGET" == "S71500" ]; then
-    - echo download to S71500 PLC
-    - apax dlplc
-    - else
-    - echo download to PLCSIM Advanced
-    - apax dlsim
-    - fi
+  # call 'apax load' to download the builded program to the target. An 'apax build' might be required upfront
+  load: apax sld load --input $BIN_FOLDER --target $IP_ADDRESS --restart
+    --accept-security-disclaimer --log debug
+  # call 'apax dlsim' to build and download the application to the target
   dlsim:
-    - apax sld -i $BIN_FOLDER -t $IP_ADDRESS -r --accept-security-disclaimer
-  dlplc:
-    - apax sld -i $BIN_FOLDER_PLC -t $IP_ADDRESS -r --accept-security-disclaimer
+    - apax build
+    - apax load
 dependencies:
-  "@ax/system-timer": ^3.0.1
-  "@simatic-ax/conversion": 1.0.0
+  "@ax/system-timer": 6.0.94
+  "@simatic-ax/conversion": 2311.1.2
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
+installStrategy: strict
+apaxVersion: 3.1.0

@@ -10,7 +10,6 @@ The `Hello AX World` contains:
   - A unit test, which check the return value of the function.
   - A watchtable to monitor the variable which contains the 
 
-
 ## Install project
 
 Clone link for cloning the repository
