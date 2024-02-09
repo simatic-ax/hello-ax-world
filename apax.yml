@@ -9,7 +9,7 @@ devDependencies:
   "@ax/sdk": 2311.0.1
 variables:
   APAX_BUILD_ARGS:
-    - --debug 
+    - --debug
   BIN_FOLDER: "./bin/plcsim"
   BIN_FOLDER_PLC: "./bin/1500"
   TARGET: plcsim #plcsim OR 1500
@@ -28,3 +28,8 @@ scripts:
     - apax sld -i $BIN_FOLDER -t $IP_ADDRESS -r --accept-security-disclaimer
   dlplc:
     - apax sld -i $BIN_FOLDER_PLC -t $IP_ADDRESS -r --accept-security-disclaimer
+dependencies:
+  "@ax/system-timer": ^3.0.1
+  "@simatic-ax/conversion": 1.0.0
+registries:
+  '@simatic-ax': 'https://npm.pkg.github.com/'
