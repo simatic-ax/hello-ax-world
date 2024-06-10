@@ -14,15 +14,11 @@ variables:
   IP_ADDRESS: 192.168.0.1
 scripts:
   # call 'apax load' to download the builded program to the target. An 'apax build' might be required upfront
-  load: apax sld load --input $BIN_FOLDER --target $IP_ADDRESS --restart
-    --accept-security-disclaimer --log debug
+  load: apax sld load --input $BIN_FOLDER --target $IP_ADDRESS --restart --accept-security-disclaimer --log debug
   # call 'apax dlsim' to build and download the application to the target
   dlsim:
     - apax build
     - apax load
-dependencies:
-  "@ax/system-timer": 6.0.94
-  "@simatic-ax/conversion": 2311.1.2
 registries:
   '@simatic-ax': 'https://npm.pkg.github.com/'
 installStrategy: strict
