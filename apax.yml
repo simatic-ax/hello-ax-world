@@ -5,7 +5,7 @@ targets:
   - "plcsim"
   - llvm
 devDependencies:
-  "@ax/sdk": 2311.0.1
+  "@ax/sdk": 2405.0.0
 variables:
   APAX_BUILD_ARGS:
     - --debug
